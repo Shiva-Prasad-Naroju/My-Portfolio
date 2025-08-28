@@ -77,7 +77,7 @@ function App() {
 
   const handleResumeDownload = () => {
     window.open(
-      "https://drive.google.com/file/d/12barTWmQoIE2mwxYid4Y9_kaoMHl06P3/view?usp=drivesdk",
+      "https://drive.google.com/file/d/1f4ST4xz4fDMPV6njfmovSoTSVaDcLBt-/view?usp=drivesdk",
       "_blank",
     );
   };
