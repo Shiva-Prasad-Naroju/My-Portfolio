@@ -242,7 +242,7 @@ function App() {
                 <div className="relative bg-white/90 backdrop-blur-lg rounded-3xl p-6 shadow-2xl border border-white/30">
                   <div className="aspect-square rounded-2xl overflow-hidden mb-4">
                     <img 
-                      src="image.png" 
+                      src="https://drive.google.com/file/d/12barTWmQoIE2mwxYid4Y9_kaoMHl06P3/view?usp=drivesdk" 
                       alt="Profile" 
                       className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
                     />
