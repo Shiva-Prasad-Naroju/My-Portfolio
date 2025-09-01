@@ -285,7 +285,7 @@ function App() {
 
           <div className="lg:col-span-2 animate-fade-up-delay">
             <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-white/20 transition-transform duration-500 hover:scale-[1.02]">
-              <p className="text-gray-700">
+              <p className="text-gray-700 text-sm">
                 I am an <span className="font-semibold">AI engineer</span> with hands-on expertise in advanced <span className="font-semibold">RAG pipelines, AI Agents</span>, and production-ready AI applications. Skilled in LLMs, semantic search, and vector databases. <span className="font-semibold">Optimized RAG workflows</span> to reduce hallucinations and boost domain accuracy.
                 <br /><br />
                 The moment I realized AI could solve real problems instead of just answering casual questions, that's when everything clicked.
