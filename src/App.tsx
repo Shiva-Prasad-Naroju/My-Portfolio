@@ -235,38 +235,88 @@ function App() {
           About Me
         </h2>
 
+
+
+
+
+
+
+
+
+
+
+
         <div className="grid lg:grid-cols-3 gap-8 items-start">
           {/* Profile photo card */}
           <div className="lg:col-span-1 animate-fade-up">
             <div className="sticky top-8">
               <div className="relative group">
                 {/* Glowing background */}
-                <div className="absolute -inset-4 bg-gradient-to-r from-blue-400 via-purple-500 to-orange-500 rounded-3xl blur-xl opacity-20 group-hover:opacity-30 transition-opacity duration-500"></div>
+                <div className="absolute -inset-3 bg-gradient-to-r from-blue-400 via-purple-500 to-orange-500 rounded-2xl blur-lg opacity-20 group-hover:opacity-30 transition-opacity duration-500"></div>
 
-                <div className="relative bg-white/90 backdrop-blur-lg rounded-3xl p-6 shadow-2xl border border-white/30">
-                  <div className="aspect-square rounded-2xl overflow-hidden mb-4">
-                    <img 
-                    src="/profile.png" 
-                    alt="Profile" 
-                    className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
-                  />
+                <div className="relative bg-white/90 backdrop-blur-lg rounded-2xl p-4 shadow-xl border border-white/30 max-w-xs mx-auto">
+                  {/* Carousel */}
+                  <div
+                    className="aspect-square rounded-lg overflow-hidden mb-3 w-44 sm:w-52 mx-auto relative"
+                    onTouchStart={(e) => (e.currentTarget.startX = e.touches[0].clientX)}
+                    onTouchEnd={(e) => {
+                      const endX = e.changedTouches[0].clientX;
+                      if (e.currentTarget.startX - endX > 50) {
+                        e.currentTarget.setIndex((prev) => (prev + 1) % 2);
+                      } else if (endX - e.currentTarget.startX > 50) {
+                        e.currentTarget.setIndex((prev) => (prev - 1 + 2) % 2);
+                      }
+                    }}
+                  >
+                    {/* Images */}
+                    <img
+                      src="/profile.png"
+                      alt="Profile"
+                      className="w-full h-full object-cover transition-opacity duration-700 ease-in-out"
+                      style={{ opacity: "1" }}
+                    />
+                    <img
+                      src="/profile2.jpg"
+                      alt="Profile 2"
+                      className="w-full h-full object-cover absolute top-0 left-0 transition-opacity duration-700 ease-in-out"
+                      style={{ opacity: "0" }}
+                    />
                   </div>
 
-
                   <div className="text-center">
-                    <h3 className="text-xl font-semibold text-gray-800 mb-2">AI Engineer</h3>
+                    <h3 className="text-base font-semibold text-gray-800 mb-1">
+                      AI Engineer
+                    </h3>
 
                     {/* Skill indicators */}
-                    <div className="flex justify-center gap-2 mt-4">
-                      <div className="w-3 h-3 bg-blue-400 rounded-full animate-pulse-slow"></div>
-                      <div className="w-3 h-3 bg-purple-400 rounded-full animate-pulse-slow" style={{animationDelay: '0.5s'}}></div>
-                      <div className="w-3 h-3 bg-orange-400 rounded-full animate-pulse-slow" style={{animationDelay: '1s'}}></div>
+                    <div className="flex justify-center gap-2 mt-2">
+                      <div className="w-2.5 h-2.5 bg-blue-400 rounded-full animate-pulse-slow"></div>
+                      <div
+                        className="w-2.5 h-2.5 bg-purple-400 rounded-full animate-pulse-slow"
+                        style={{ animationDelay: "0.5s" }}
+                      ></div>
+                      <div
+                        className="w-2.5 h-2.5 bg-orange-400 rounded-full animate-pulse-slow"
+                        style={{ animationDelay: "1s" }}
+                      ></div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
+
+
+
+
+
+
+
+
+
+
+
 
           {/* Text content */}
           {/* <div className="lg:col-span-2 animate-fade-up-delay">
@@ -285,7 +335,7 @@ function App() {
 
           <div className="lg:col-span-2 animate-fade-up-delay">
             <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-white/20 transition-transform duration-500 hover:scale-[1.02]">
-              <p className="text-gray-700 text-sm">
+              <p className="text-gray-700 text-sm sm:text-base leading-relaxed">
                 I am an <span className="font-semibold">AI engineer</span> with hands-on expertise in advanced <span className="font-semibold">RAG pipelines, AI Agents</span>, and production-ready AI applications. Skilled in LLMs, semantic search, and vector databases. <span className="font-semibold">Optimized RAG workflows</span> to reduce hallucinations and boost domain accuracy.
                 <br /><br />
                 The moment I realized AI could solve real problems instead of just answering casual questions, that's when everything clicked.
@@ -296,8 +346,6 @@ function App() {
               </p>
             </div>
           </div>
-
-
 
 
         </div>
