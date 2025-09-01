@@ -75,11 +75,15 @@ function App() {
     setIsMenuOpen(false);
   };
 
+  // const handleResumeDownload = () => {
+  //   window.open(
+  //     "https://drive.google.com/file/d/1f4ST4xz4fDMPV6njfmovSoTSVaDcLBt-/view?usp=drivesdk",
+  //     "_blank",
+  //   );
+  // };
+ 
   const handleResumeDownload = () => {
-    window.open(
-      "https://drive.google.com/file/d/1f4ST4xz4fDMPV6njfmovSoTSVaDcLBt-/view?usp=drivesdk",
-      "_blank",
-    );
+  window.open("/Shiva_Prasad_Naroju_Resume.pdf", "_blank");
   };
 
   const navItems = [
