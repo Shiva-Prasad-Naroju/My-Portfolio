@@ -269,7 +269,7 @@ function App() {
           </div>
 
           {/* Text content */}
-          <div className="lg:col-span-2 animate-fade-up-delay">
+          {/* <div className="lg:col-span-2 animate-fade-up-delay">
             <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-white/20 transition-transform duration-500 hover:scale-[1.02]">
               <p className="text-lg leading-relaxed text-gray-700">
                 I am an <span className="font-semibold">AI engineer</span> with hands-on expertise in advanced <span className="font-semibold">RAG pipelines, AI Agents</span>, and production-ready AI applications. Skilled in LLMs, semantic search, and vector databases. <span className="font-semibold">Optimized RAG workflows</span> to reduce hallucinations and boost domain accuracy.
@@ -281,7 +281,25 @@ function App() {
                 There's nothing quite like knowing your code could help save a life. The way I see it: every project should <span className="font-semibold">create impact</span>—whether it saves a life, saves time, or simply makes someone’s day better.
               </p>
             </div>
+          </div> */}
+
+          <div className="lg:col-span-2 animate-fade-up-delay">
+            <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-white/20 transition-transform duration-500 hover:scale-[1.02]">
+              <p className="text-gray-700">
+                I am an <span className="font-semibold">AI engineer</span> with hands-on expertise in advanced <span className="font-semibold">RAG pipelines, AI Agents</span>, and production-ready AI applications. Skilled in LLMs, semantic search, and vector databases. <span className="font-semibold">Optimized RAG workflows</span> to reduce hallucinations and boost domain accuracy.
+                <br /><br />
+                The moment I realized AI could solve real problems instead of just answering casual questions, that's when everything clicked.
+                I dove headfirst into <span className="font-semibold">Machine Learning, Deep Learning, Generative AI, and Agentic AI</span>, not because the technology was cool (though it definitely is), but because I saw its potential to genuinely <span className="font-semibold">solve real-world problems</span>.
+                <br /><br />
+                Today, I focus on building <span className="font-semibold">AI that matters</span> and solving problems. I'm particularly passionate about healthcare AI, creating solutions that help doctors work faster when every second counts. 
+                There's nothing quite like knowing your code could help save a life. The way I see it: every project should <span className="font-semibold">create impact</span>—whether it saves a life, saves time, or simply makes someone’s day better.
+              </p>
+            </div>
           </div>
+
+
+
+
         </div>
       </div>
     </section>
